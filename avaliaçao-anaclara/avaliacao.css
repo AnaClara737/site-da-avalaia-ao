@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #141414;
+}
+
+section{
+    height: 100vh;
+    color: white;
+    transition: 1s;
+}
+
+.sec1{
+    background: url(img/escritorio.jpg) no-repeat;
+    background-size: cover;
+}
+
+.sec1 h1{
+    font-size: 100px;
+    padding-top: 400px;
+    padding-left: 84px;
+    animation: apareceDireita 1s;
+}
+
+.sec1 p{
+    font-size: 30px;
+    padding-left: 84px;
+    color: rgb(152, 152, 152);
+    animation: apareceEsquerda 1s;
+}
+
+.sec2{
+    display: flex;
+}
+
+.sec2 h1{
+    font-size: 60px;
+    padding-top: 280px;
+}
+
+.sec2 img{
+    width: 730px;
+    height: 480px;
+    margin-top: 200px;
+
+}
+
+.sec2 p{
+    font-size: 24px;
+    color: rgb(212, 212, 212);
+}
+
+.sec2 button{
+    width: 170px;
+    height: 55px;
+    margin-top: 2rem;
+    font-size: 20px;
+    background-color: rgb(176, 176, 176);
+
+}
+
+.sec2 a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.secpalavras{
+    padding-left: 4.5rem;
+}
+
+.sec3{
+    display: flex;
+}
+
+.nomeimg{
+    padding-top: 145px;
+    margin-left: 7rem;
+}
+
+.nomeimg h1{
+    font-size: 65px;
+}
+
+.nomeimg img{
+    width: 500px;
+    height: 350px;
+
+}
+
+.servicos{
+    padding-top: 190px;
+    padding-left: 12rem;
+}
+
+.servicos h1{
+    font-size: 40px;
+}
+
+.servicos p{
+    font-size: 24px;
+    color: rgb(212, 212, 212);
+}
+
+.h1eh2{
+    display: flex;
+}
+.h1eh2 h2{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-right: 1rem;
+    color: rgb(212, 212, 212);
+}
+.creditos{
+    color: #141414;
+}
+.sec2 button:hover{
+    transform: scale(1.1) translateY(-5px);
+    background-color: rgba(161, 161, 161, 0.627);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.h1eh2:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.servicos p:hover{
+    transform: scale(1.1) translateY(-5px);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+
+@keyframes apareceDireita {
+    from{
+        transform: translateX(-50px);
+        opacity: 0;
+    }to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes apareceEsquerda{
+    from{
+        transform: translateX(50px);
+        opacity: 0;
+    }to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.hidden{
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: 1s;
+}
+
+.hiddenR{
+    opacity: 0;
+    transform: translateX(50px);
+    transition: 1s;
+}
+
+.show{
+    opacity: 1;
+    transform: translateX(0px);
+}
